@@ -6,7 +6,7 @@
   "scripts": {
     "check": "tsc",
     "test": "bun test",
-    "prepublish": "pnpm run check && pnpm run test"
+    "build": "pnpm run check && pnpm run test"
   },
   "keywords": [],
   "type": "module",
