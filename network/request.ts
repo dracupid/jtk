@@ -25,7 +25,7 @@ export class Response {
     if (this.#bodyString === null) {
       this.#bodyString = this.body.toString('utf-8')
     }
-    return this.bodyString
+    return this.#bodyString
   }
 }
 
