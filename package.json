@@ -28,5 +28,9 @@
   },
   "engines": {
     "node": ">=20.11"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "chalk": "^5.3.0"
   }
 }
