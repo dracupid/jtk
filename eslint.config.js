@@ -1,17 +1,9 @@
-import jaxonTSConfig from '@jaxonzhao/eslint-config-typescript'
+//@ts-check
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-export default [
-  ...jaxonTSConfig,
-  {
-    languageOptions: {
-      parserOptions: {
-        project: './tsconfig.json',
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-    rules: {
-      'n/file-extension-in-import': 0,
-    },
+import { useESLintConfig, useTs } from 'jpreset/eslint/index.mjs'
+
+export default useESLintConfig(...useTs(import.meta.dirname), {
+  rules: {
+    'n/file-extension-in-import': 0,
   },
-]
+})

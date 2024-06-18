@@ -3,7 +3,7 @@ import { test } from 'bun:test'
 import { sleep } from '.'
 import { Mutex } from './Mutex'
 
-test('Mutes', async () => {
+test('Mutex', async () => {
   const mutex = new Mutex()
   let i = 0
   await Promise.all([

@@ -1,4 +1,4 @@
 {
-  "extends": "./tsconfig.common.json",
+  "extends": "jpreset/typescript/tsconfig.common.json",
   "include": ["**/*.ts"]
 }
