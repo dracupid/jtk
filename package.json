@@ -21,11 +21,14 @@
   "license": "MIT",
   "packageManager": "pnpm@9.3.0+sha256.e1f9e8d1a16607a46dd3c158b5f7a7dc7945501d1c6222d454d63d033d1d918f",
   "devDependencies": {
+    "@jaxonzhao/boot": "^0.1.0",
     "@types/bun": "^1.1.4",
     "@types/node": "^20.14.5",
     "bun": "^1.1.13",
+    "eslint": "^8",
     "mitata": "^0.1.11",
-    "jpreset": "file:../jpreset"
+    "prettier": "^3.3.2",
+    "typescript": "^5.4.5"
   },
   "engines": {
     "node": ">=20.11"

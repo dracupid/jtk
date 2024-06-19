@@ -1,9 +1,5 @@
 //@ts-check
 
-import { useESLintConfig, useTs } from 'jpreset/eslint/index.mjs'
+import { useTs } from '@jaxonzhao/boot/eslint'
 
-export default useESLintConfig(...useTs(import.meta.dirname), {
-  rules: {
-    'n/file-extension-in-import': 0,
-  },
-})
+export default useTs(import.meta.dirname)
