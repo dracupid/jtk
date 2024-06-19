@@ -1,6 +1,6 @@
 {
   "name": "jtk",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Jaxon's Typescript Kit",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "format": "prettier --write --cache .",
     "check": "tsc",
     "test": "bun test",
-    "build": "pnpm run check && pnpm run test"
+    "prepublish": "pnpm run check && pnpm run test",
+    "publish": "pnpm publish --access=public --registry=https://registry.npmjs.org/"
   },
   "keywords": [
     "tool",
@@ -19,7 +20,7 @@
   "type": "module",
   "author": "Jingchen Zhao",
   "license": "MIT",
-  "packageManager": "pnpm@9.3.0+sha256.e1f9e8d1a16607a46dd3c158b5f7a7dc7945501d1c6222d454d63d033d1d918f",
+  "packageManager": "pnpm@9.4.0+sha256.b6fd0bfda555e7e584ad7e56b30c68b01d5a04f9ee93989f4b93ca8473c49c74",
   "devDependencies": {
     "@jaxonzhao/boot": "^0.1.0",
     "@types/bun": "^1.1.4",
